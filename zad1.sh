@@ -10,7 +10,11 @@ case "$1" in
         echo "log$i.txt | skrypt.sh | $(date)" > log$i.txt
     done
     ;;
-
+    --help | -h)
+    echo "Dostępne opcje:"
+    echo "--date (-d) - Wyswietl date"
+    echo "--logs (-l) [liczba] - Stworz pliki log"
+    ;;
     *)
         echo "Nieznane polecenie uzyj --help."
         ;;
